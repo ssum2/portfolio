@@ -195,7 +195,21 @@ body, html {
                    2017.03 ~ 2018.04 한국여성발명협회
               </td>
           </tr>
-
+          <tr>
+              <td class="col1">
+                Certificates
+              </td>
+              <td class="col2">
+                  2018.09 정보처리기사(필기)
+              </td>
+          </tr>
+           <tr>
+              <td class="col1">
+              </td>
+              <td class="col2">
+                   2017.01 新HSK4급
+              </td>
+          </tr>
       </table>
     </div>
   </div>
@@ -257,7 +271,36 @@ body, html {
         <div id="Demo1" class="w3-hide w3-container">
            <div class="w3-row">
               <div class="w3-col m5 w3-center w3-padding-large">
-                <img src="/img/001_main.gif" class="w3-round w3-image" alt="" width="500" height="300">
+                <img src="/img/semi_erd_model.png" class="w3-round w3-image" alt="E-R모델링" width="500" height="300" onclick="onClick(this)" class="w3-hover-opacity">
+              </div>
+              <div class="w3-col m7 w3-hide-small w3-padding-small">
+                  <table>
+                      <tr>
+                          <td class="rowSubject" colspan="2">[기획]</td>
+                      </tr>
+                      <tr>
+                          <td class="trBold" colspan="2"> - DB설계</td>
+                      </tr>
+                      <tr>
+                          <td class="colHeader" rowspan="1" > 1) E-R모델링</td>
+                          <td class="endCol">EXERD tool을 활용하여 DB의 논리, 물리구조 모델링</td>
+                      </tr>
+                      <tr>
+                          <td> 2) SQL</td>
+                          <td>Oracle SQL Query</td>
+                      </tr>
+                  </table>
+              </div>
+           </div>
+           <div class="w3-row">
+               <div class="w3-col m12 w3-center w3-padding-large">
+                   <iframe src="/sql.html" width="100%" height="300"></iframe>
+               </div>
+           </div>
+
+           <div class="w3-row" style="border-top: 1px solid gray;">
+              <div class="w3-col m5 w3-center w3-padding-large">
+                <img src="/img/001_main.gif" class="w3-round w3-image" alt="001. 메인화면" width="500" height="300"  onclick="onClick(this)" class="w3-hover-opacity">
               </div>
               <div class="w3-col m7 w3-hide-small w3-padding-small">
                   <table>
@@ -314,7 +357,7 @@ body, html {
            </div>
            <div class="w3-row" style="border-top: 1px solid gray;">
               <div class="w3-col m5 w3-center w3-padding-large">
-                <img src="/img/006_registerMember.gif" class="w3-round w3-image" alt="registerMember" width="500" height="300">
+                <img src="/img/006_registerMember.gif" class="w3-round w3-image" alt="002. 회원가입" width="500" height="300"  onclick="onClick(this)" class="w3-hover-opacity">
               </div>
               <div class="w3-col m7 w3-hide-small w3-padding-small">
                   <table>
@@ -359,9 +402,9 @@ body, html {
            </div>
            <div class="w3-row" style="border-top: 1px solid gray;">
               <div class="w3-col m5 w3-center w3-padding-large">
-                <img src="/img/002_login.gif" class="w3-round w3-image" alt="login" width="500" height="300">
-                <img src="/img/003_find_id.gif" class="w3-round w3-image" alt="find id" width="500" height="300">
-                <img src="/img/004_find_pw.gif" class="w3-round w3-image" alt="find pw" width="500" height="300">
+                <img src="/img/002_login.gif" class="w3-round w3-image" alt="003. 로그인" width="500" height="300"  onclick="onClick(this)" class="w3-hover-opacity">
+                <img src="/img/003_find_id.gif" class="w3-round w3-image" alt="003. 아이디찾기" width="500" height="300"  onclick="onClick(this)" class="w3-hover-opacity">
+                <img src="/img/004_find_pw.gif" class="w3-round w3-image" alt="003. 비밀번호찾기" width="500" height="300"  onclick="onClick(this)" class="w3-hover-opacity">
               </div>
               <div class="w3-col m7 w3-hide-small w3-padding-small">
                   <table>
@@ -430,9 +473,9 @@ body, html {
 
            <div class="w3-row" style="border-top: 1px solid gray;">
               <div class="w3-col m5 w3-center w3-padding-large">
-                <img src="/img/005_memberedit.gif" class="w3-round w3-image" alt="login" width="500" height="300">
-                <img src="/img/008_coupon.gif" class="w3-round w3-image" alt="find id" width="500" height="300">
-                <img src="/img/007_orderList.gif" class="w3-round w3-image" alt="find pw" width="500" height="300">
+                <img src="/img/005_memberedit.gif" class="w3-round w3-image" alt="004. 회원정보수정" width="500" height="300" onclick="onClick(this)" class="w3-hover-opacity">
+                <img src="/img/008_coupon.gif" class="w3-round w3-image" alt="004. 쿠폰목록" width="500" height="300" onclick="onClick(this)" class="w3-hover-opacity">
+                <img src="/img/007_orderList.gif" class="w3-round w3-image" alt="005. 주문목록" width="500" height="300" onclick="onClick(this)" class="w3-hover-opacity">
               </div>
               <div class="w3-col m7 w3-hide-small w3-padding-small">
                   <table>
@@ -443,22 +486,28 @@ body, html {
                           <td class="trBold" colspan="2"> - 화면 설명</td>
                       </tr>
                       <tr>
-                          <td class="colHeader" rowspan="1" > 1) 회원정보 수정</td>
-                          <td class="endCol">아이디와 비밀번호 입력창/아이디 저장 체크박스/아이디 찾기 및 비밀번호 찾기 버튼</td>
+                          <td class="colHeader" rowspan="2" > 1) 회원정보수정</td>
+                          <td>비밀번호 확인 후 회원정보/수정 페이지로 자동 전환</td>
+                      </tr>
+                      <tr>
+                          <td class="endCol">아이디, 포인트, 누적금액을 제외한 나머지 회원정보를 수정할 수 있는 텍스트박스가 있음</td>
                       </tr>
                       <tr>
                           <td rowspan="1" class="colHeader"> 2) 쿠폰목록</td>
-                          <td class="endCol">아이디찾기 버튼 클릭 시 유저명과 연락처를 입력하는 modal이 나타남</td>
+                          <td class="endCol">쿠폰번호, 쿠폰명 및 쿠폰 할인율과 할인제한조건, 사용상태가 리스트 형태로 노출</td>
                       </tr>
                       <tr>
                           <td rowspan="3"> 3) 주문목록</td>
-                          <td>비밀번호 찾기 버튼 클릭 시 아이디와 이메일을 입력하는 modal이 나타남</td>
+                          <td>주문코드, 주문상품의 이름, 수량, 가격, 주문일시, 배송상태, 취소/환불 정보가 리스트 형태로 노출</td>
                       </tr>
                       <tr>
-                          <td>찾기 클릭시 메일이 전송되며 인증번호 입력 화면으로 전환</td>
+                          <td>주문코드 클릭 시 주문상세페이지로 넘어가며, 주문상품의 원가격, 판매가격, 포인트 정보가 추가로 제공됨</td>
                       </tr>
                       <tr>
-                          <td>인증번호 확인 후 새 비밀번호 입력, 비밀번호 확인 입력 박스 노출</td>
+                          <td>주문상세페이지의 HOME버튼을 누르면 메인페이지로, BACK버튼을 누르면 주문목록페이지로 이동</td>
+                      </tr>
+                      <tr>
+                          <td>주문취소 또는 환불 클릭 시 alert 경고창이 뜨면서 취소상태로 변경됨</td>
                       </tr>
                       <tr>
                           <td class="trBold"> - 구현 기능</td>
@@ -466,20 +515,23 @@ body, html {
                       <tr>
                           <td colspan="2">
                             <ul style="list-style-type: square; margin: 0px;">
-                                <li>유저가 입력한 ID와 PW가 DB와 일치하는지 비교</li>
-                                <li>PW는 SHA256 암호화 하여 DB와 비교한 후 일치하면 session에 로그인 유저정보가 담긴 Bean을 저장</li>
-                                <li>아이디저장 체크박스를 선택한 경우 아이디가 cookie에 저장하여 다음 접속시 cookie값을 자동 셋팅</li>
+                                <li>회원정보수정 페이지에 접근 전, 유저가 입력한 PW를 SHA256 암호화 하여 DB와 일치하는지 비교(Ajax 사용)</li>
+                                <li>PW가 일치하는 경우 setTimeOut함수로 3000ms 뒤에 회원정보수정페이지로 자동 전환</li>
+                                <li>회원 정보를 DB에서 SELECT 하여 parsing</li>
+                                <li>아이디, 포인트, 누적금액, 회원등급은 확인만 할 수 있도록 readonly 옵션 부여</li>
                             </ul>
                             <hr style="border-bottom: 1px solid gray; margin: 2%;">
                             <ul style="list-style-type: square; margin: 0px;">
-                                <li>유저가 입력한 이름과 AES256 암호화 한 연락처를 DB와 일치하는 지 비교</li>
-                                <li>일치하는 경우 하단에 유저의 ID를 노출하고, 불일치 하는 경우 경고 텍스트가 노출</li>
+                                <li>로그인할 때 session에 저장된 로그인유저의 VO에서 회원번호(고유값)를 가져와 DB의 쿠폰 테이블에서 SELECT하여 parsing</li>
                             </ul>
                             <hr style="border-bottom: 1px solid gray; margin: 2%;">
                             <ul style="list-style-type: square; margin: 0px;">
-                                <li>아이디와 AES256 암호화 한 이메일 주소를 DB와 일치하는 지 비교하여 일치하는 경우 java Random함수로 생성된 인증코드를 Gmail API를 이용하여 유저의 이메일로 전송함</li>
-                                <li>java에서 생성된 인증코드와 유저가 입력한 인증코드가 일치 하는 경우 새 비밀번호 입력화면으로 전환</li>
-                                <li>jQuery로 입력한 비밀번호와 비밀번호 확인 정보가 일치하는지 유효성검사를 거친 후 비밀번호가 변경, 마지막 비밀번호 변경 일시도 update됨</li>
+                                <li>로그인 유저의 회원번호를 session에서 가져와 주문테이블과 상품테이블을 JOIN 하여 회원번호와 일치하는 값만 SELECT</li>
+                                <li>javascript 태그라이브러리의 c:if를 이용하여 주문목록이 있을 때에는 c:foreach 함수로 LIST객체의 내용물을 parsing </li>
+                                <li>주문취소 버튼 클릭시 주문코드로 판별하여 DB의 해당 주문건의 status를 취소상태로 비동기적으로 변경(Ajax 사용)</li>
+                            </ul>
+                            <ul style="list-style-type: square; margin: 0px;">
+                                <li>주문코드 클릭시 이동되는 주문상세페이지는 주문, 물품, 패키지, 결제 테이블을 multi join으로 SELECT하여 Parsing.</li>
                             </ul>
                           </td>
                       </tr>
@@ -489,9 +541,10 @@ body, html {
                       <tr>
                           <td colspan="2">
                             <ul style="list-style-type: square; margin: 0px;">
-                                <li>로그인<br/>SELECT ... FROM MEMBER WHERE USERID=? AND PW=?</li>
-                                <li>아이디찾기<br/>SELECT ... FROM MEMBER WHERE NAME=? AND PHONE=?</li>
-                                <li>비밀번호찾기<br/>SELECT ... FROM MEMBER WHERE USERID=? AND EMAIL=?</li>
+                                <li>회원정보<br/>SELECT ... FROM MEMBER WHERE USERID=? AND PW=?</li>
+                                <li>회원정보수정<br/>UPDATE MEMBER SET ... WHERE IDX=?</li>
+                                <li>쿠폰리스트<br/>SELECT ... FROM MY_COUPON WHERE FK_USERID=?</li>
+                                <li>주문목록<br/>SELECT ... FROM MEMBER WHERE USERID=? AND EMAIL=?</li>
                             </ul>
                           </td>
                       </tr>
