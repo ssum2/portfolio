@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<title>Portpolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Myeongjo&amp;subset=korean" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway", 'Nanum Gothic', sans-serif;
+    /*font-family: 'East Sea Dokdo', cursive;*/
+}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/w3images/parallax1.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 2px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+.col1{
+    border-right: 1px solid gray;
+    padding-right: 3%;
+    width: 20%;
+}
+.col2{
+    padding-left: 3%;
+}
+.rowSubject{
+    font-weight: bold;
+    font-size: 20px;
+}
+.trBold{
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.endCol {
+    border-bottom: 1px solid gray;
+    border-collapse: collapse;
+}
+.colHeader{
+    border-bottom: 1px solid gray;
+    width: 20%;
+}
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">BAE SU MI_Portpolio</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em> </em></p>
+  <p>
+
+  </p>
+  <div class="w3-row">
+    <div class="w3-col m5 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
+      <img src="/img/sumi2.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="200" height="300">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m7 w3-hide-small w3-padding-large">
+      <table style="width: 100%;">
+          <tr>
+              <td class="col1">
+                NAME
+              </td>
+              <td class="col2">
+                배 수 미<br>
+                BAE SU MI
+              </td>
+          </tr>
+          <tr>
+              <td class="col1">
+                AGE
+              </td>
+              <td class="col2">
+                27세 ( 1993. 02. 22 )
+              </td>
+          </tr>
+          <tr>
+              <td class="col1">
+                EDUCATION
+              </td>
+              <td class="col2">
+                2011.03 ~ 2016.08 명지대학교 사학과
+              </td>
+          </tr>
+          <tr>
+              <td class="col1">
+
+              </td>
+              <td class="col2">
+                2011.03 ~ 2016.08 <span style="font-weight: bold;">History</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                MyeongJi University, Seoul
+              </td>
+          </tr>
+          <tr>
+              <td class="col1">
+              </td>
+              <td class="col2">
+                   2018.08 ~ 2019.02 KH정보교육원 WEB개발 과정 수료
+              </td>
+          </tr>
+          <tr>
+              <td class="col1">
+                EXPERIENCE
+              </td>
+              <td class="col2">
+                  2015.04 ~ 2015.08 ㈜넷마블게임즈 인재개발팀
+              </td>
+          </tr>
+           <tr>
+              <td class="col1">
+              </td>
+              <td class="col2">
+                   2016.07 ~ 2017.01 ㈜넷마블 인사팀
+              </td>
+          </tr>
+          <tr>
+              <td class="col1">
+              </td>
+              <td class="col2">
+                   2017.03 ~ 2018.04 한국여성발명협회
+              </td>
+          </tr>
+
+      </table>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide"><i class="fa fa-angle-double-right"></i>Java(Servlet/JSP, FrameWork, jdbc struts, spring, Mybatis, Ajax)</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-angle-double-right"></i>ORACLE SQL programming</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-gray w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-angle-double-right"></i>HTML / CSS / JavaScript, JQuery</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-angle-double-right"></i>English</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-grey w3-center" style="width:65%">65%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-angle-double-right"></i>Chinese(汉语Hànyŭ)</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-grey w3-center" style="width:50%">50%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">장점</span><br>
+    장점1
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge"></span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Meetings
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>참여 프로젝트<br>아래 버튼을 클릭하시면 프로젝트 상세내용을 볼 수 있습니다.</em></p><br>
+<div class="w3-row-padding w3-container">
+    <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-dark-gray w3-left-align">Project1: Saladmarket "MarketSue" 샐러드 쇼핑몰 </button>
+        <div id="Demo1" class="w3-hide w3-container">
+           <div class="w3-row">
+              <div class="w3-col m5 w3-center w3-padding-large">
+                <img src="/img/001_main.gif" class="w3-round w3-image" alt="" width="500" height="300">
+              </div>
+              <div class="w3-col m7 w3-hide-small w3-padding-small">
+                  <table>
+                      <tr>
+                          <td class="rowSubject" colspan="2">[001. 메인 화면]</td>
+                      </tr>
+                      <tr>
+                          <td class="trBold" colspan="2"> - 화면 설명</td>
+                      </tr>
+                      <tr>
+                          <td class="colHeader" rowspan="2" > 1) header</td>
+                          <td>회원가입, 로그인, 상품 메뉴, 장바구니 메뉴 버튼 노출.</td>
+                      </tr>
+                      <tr>
+                          <td class="endCol">로그인 시 마이페이지 버튼 생성 및 회원가입 버튼 삭제</td>
+                      </tr>
+                      <tr>
+                          <td rowspan="2" class="colHeader"> 2) contents</td>
+                          <td>이벤트 페이지로 이동되는 이미지링크를 슬라이드 형태로 노출.</td>
+                      </tr>
+                      <tr>
+                          <td class="endCol">하단부에는 태그별로 상품 리스트를 간단히 출력</td>
+                      </tr>
+                      <tr>
+                          <td> 3) footer</td>
+                          <td> 사이트 이용 정보 및 사업자 정보를 보여줌</td>
+                      </tr>
+                      <tr>
+                          <td class="trBold"> - 구현 기능</td>
+                      </tr>
+                      <tr>
+                          <td colspan="2">
+                            <ul style="list-style-type: square;">
+                            <li>session에서 로그인 정보를 가져와 로그인 유무 판별 후 메뉴 동적 생성.</li>
+                            <li>등록된 이벤트 이미지 정보를 DB에서 가져와 javascript로 슬라이드형태로 노출하여,
+                                이벤트이미지에 해당하는 이벤트페이지로 이동하는 링크를 삽입.</li>
+                            <li>Hit, New, Best 태그 정보에 따라 상품목록을 가져옴. </li>
+                            </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td class="trBold"> - 참조 DB</td>
+                      </tr>
+                      <tr>
+                          <td colspan="2">
+                            <ul style="list-style-type: square; margin: 0px;">
+                                <li>물품리스트 <br/>SELECT ... FROM View_productList WHERE SPECTAG=?</li>
+                                <li>이벤트 이미지 및 경로 <br/>SELECT ... FROM EVENT WHERE STATUS=1</li>
+                            </ul>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+           </div>
+           <div class="w3-row" style="border-top: 1px solid gray;">
+              <div class="w3-col m5 w3-center w3-padding-large">
+                <img src="/img/006_registerMember.gif" class="w3-round w3-image" alt="registerMember" width="500" height="300">
+              </div>
+              <div class="w3-col m7 w3-hide-small w3-padding-small">
+                  <table>
+                      <tr>
+                          <td class="rowSubject" colspan="2">[002. 회원가입]</td>
+                      </tr>
+                      <tr>
+                          <td class="trBold" colspan="2"> - 화면 설명</td>
+                      </tr>
+                      <tr>
+                          <td class="">아이디, 아이디중복 확인 버튼, 비밀번호, 비밀번호 확인, 이름, 이메일, 연락처, 우편번호 찾기 버튼 및 주소, 생년월일을 입력할 수 있는 텍스트 박스가 있음</td>
+                      </tr>
+                      <tr>
+                          <td class="trBold"> - 구현 기능</td>
+                      </tr>
+                      <tr>
+                          <td colspan="2">
+                            <ul style="list-style-type: square; margin: 0px;">
+                                <li>아이디중복버튼 클릭 시 유저 입력값이 DB에 있는 지 비동기적으로 판별하여 결과를 우측에 노출 (Ajax 이용)</li>
+                                <li>비밀번호와 비밀번호 확인 입력값이 일치하는 지를 jQuery로 비교 (blur함수로 포커싱 아웃될 때 each함수로 문자열 비교)</li>
+                                <li>우편번호 버튼 클릭 시 다음 우편번호 찾기 API modal창이 오픈, 주소 검색 후 결과값을 javascript로 우편번호, 주소 입력박스에 자동 셋팅</li>
+                                <li>datepicker를 이용하여 생년월일을 캘린더 형태로 선택/입력 가능</li>
+                                <li>이용약관은 iframe 태그로 노출되며, 동의 체크박스에 체크가 되어야만 회원가입 기능이 활성화됨</li>
+                                <li>모든 입력박스의 값이 정상적으로 입력됐을 경우, 비밀번호는 SHA256 암호화, 이메일과 연락처는 AES256 암호화 처리를 거쳐 DB에 insert함</li>
+                                <li><span style="font-weight: bold">[공통] </span> jQurey blur 함수, 정규표현식을 이용한 유효성 검사</li>
+                            </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td class="trBold"> - 참조 DB</td>
+                      </tr>
+                      <tr>
+                          <td colspan="2">
+                            <ul style="list-style-type: square; margin: 0px;">
+                                <li>아이디 중복 검사 <br/>SELECT COUNT(*) FROM MEMBER WHERE USERID=?</li>
+                                <li>회원 정보 입력<br/>INSERT INTO MEMBER VALUES(...)</li>
+                            </ul>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+           </div>
+           <div class="w3-row" style="border-top: 1px solid gray;">
+              <div class="w3-col m5 w3-center w3-padding-large">
+                <img src="/img/002_login.gif" class="w3-round w3-image" alt="login" width="500" height="300">
+                <img src="/img/003_find_id.gif" class="w3-round w3-image" alt="find id" width="500" height="300">
+                <img src="/img/004_find_pw.gif" class="w3-round w3-image" alt="find pw" width="500" height="300">
+              </div>
+              <div class="w3-col m7 w3-hide-small w3-padding-small">
+                  <table>
+                      <tr>
+                          <td class="rowSubject" colspan="2">[003. 로그인]</td>
+                      </tr>
+                      <tr>
+                          <td class="trBold" colspan="2"> - 화면 설명</td>
+                      </tr>
+                      <tr>
+                          <td class="colHeader" rowspan="1" > 1) 로그인</td>
+                          <td class="endCol">아이디와 비밀번호 입력창/아이디 저장 체크박스/아이디 찾기 및 비밀번호 찾기 버튼</td>
+                      </tr>
+                      <tr>
+                          <td rowspan="1" class="colHeader"> 2) ID 찾기</td>
+                          <td class="endCol">아이디찾기 버튼 클릭 시 유저명과 연락처를 입력하는 modal이 나타남</td>
+                      </tr>
+                      <tr>
+                          <td rowspan="3"> 3) PW 찾기</td>
+                          <td>비밀번호 찾기 버튼 클릭 시 아이디와 이메일을 입력하는 modal이 나타남</td>
+                      </tr>
+                      <tr>
+                          <td>찾기 클릭시 메일이 전송되며 인증번호 입력 화면으로 전환</td>
+                      </tr>
+                      <tr>
+                          <td>인증번호 확인 후 새 비밀번호 입력, 비밀번호 확인 입력 박스 노출</td>
+                      </tr>
+                      <tr>
+                          <td class="trBold"> - 구현 기능</td>
+                      </tr>
+                      <tr>
+                          <td colspan="2">
+                            <ul style="list-style-type: square; margin: 0px;">
+                                <li>유저가 입력한 ID와 PW가 DB와 일치하는지 비교</li>
+                                <li>PW는 SHA256 암호화 하여 DB와 비교한 후 일치하면 session에 로그인 유저정보가 담긴 Bean을 저장</li>
+                                <li>아이디저장 체크박스를 선택한 경우 아이디가 cookie에 저장하여 다음 접속시 cookie값을 자동 셋팅</li>
+                            </ul>
+                            <hr style="border-bottom: 1px solid gray; margin: 2%;">
+                            <ul style="list-style-type: square; margin: 0px;">
+                                <li>유저가 입력한 이름과 AES256 암호화 한 연락처를 DB와 일치하는 지 비교</li>
+                                <li>일치하는 경우 하단에 유저의 ID를 노출하고, 불일치 하는 경우 경고 텍스트가 노출</li>
+                            </ul>
+                            <hr style="border-bottom: 1px solid gray; margin: 2%;">
+                            <ul style="list-style-type: square; margin: 0px;">
+                                <li>아이디와 AES256 암호화 한 이메일 주소를 DB와 일치하는 지 비교하여 일치하는 경우 java Random함수로 생성된 인증코드를 Gmail API를 이용하여 유저의 이메일로 전송함</li>
+                                <li>java에서 생성된 인증코드와 유저가 입력한 인증코드가 일치 하는 경우 새 비밀번호 입력화면으로 전환</li>
+                                <li>jQuery로 입력한 비밀번호와 비밀번호 확인 정보가 일치하는지 유효성검사를 거친 후 비밀번호가 변경, 마지막 비밀번호 변경 일시도 update됨</li>
+                            </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td class="trBold"> - 참조 DB</td>
+                      </tr>
+                      <tr>
+                          <td colspan="2">
+                            <ul style="list-style-type: square; margin: 0px;">
+                                <li>로그인<br/>SELECT ... FROM MEMBER WHERE USERID=? AND PW=?</li>
+                                <li>아이디찾기<br/>SELECT ... FROM MEMBER WHERE NAME=? AND PHONE=?</li>
+                                <li>비밀번호찾기<br/>SELECT ... FROM MEMBER WHERE USERID=? AND EMAIL=?</li>
+                            </ul>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+           </div>
+
+           <div class="w3-row" style="border-top: 1px solid gray;">
+              <div class="w3-col m5 w3-center w3-padding-large">
+                <img src="/img/005_memberedit.gif" class="w3-round w3-image" alt="login" width="500" height="300">
+                <img src="/img/008_coupon.gif" class="w3-round w3-image" alt="find id" width="500" height="300">
+                <img src="/img/007_orderList.gif" class="w3-round w3-image" alt="find pw" width="500" height="300">
+              </div>
+              <div class="w3-col m7 w3-hide-small w3-padding-small">
+                  <table>
+                      <tr>
+                          <td class="rowSubject" colspan="2">[004. 마이페이지]</td>
+                      </tr>
+                      <tr>
+                          <td class="trBold" colspan="2"> - 화면 설명</td>
+                      </tr>
+                      <tr>
+                          <td class="colHeader" rowspan="1" > 1) 회원정보 수정</td>
+                          <td class="endCol">아이디와 비밀번호 입력창/아이디 저장 체크박스/아이디 찾기 및 비밀번호 찾기 버튼</td>
+                      </tr>
+                      <tr>
+                          <td rowspan="1" class="colHeader"> 2) 쿠폰목록</td>
+                          <td class="endCol">아이디찾기 버튼 클릭 시 유저명과 연락처를 입력하는 modal이 나타남</td>
+                      </tr>
+                      <tr>
+                          <td rowspan="3"> 3) 주문목록</td>
+                          <td>비밀번호 찾기 버튼 클릭 시 아이디와 이메일을 입력하는 modal이 나타남</td>
+                      </tr>
+                      <tr>
+                          <td>찾기 클릭시 메일이 전송되며 인증번호 입력 화면으로 전환</td>
+                      </tr>
+                      <tr>
+                          <td>인증번호 확인 후 새 비밀번호 입력, 비밀번호 확인 입력 박스 노출</td>
+                      </tr>
+                      <tr>
+                          <td class="trBold"> - 구현 기능</td>
+                      </tr>
+                      <tr>
+                          <td colspan="2">
+                            <ul style="list-style-type: square; margin: 0px;">
+                                <li>유저가 입력한 ID와 PW가 DB와 일치하는지 비교</li>
+                                <li>PW는 SHA256 암호화 하여 DB와 비교한 후 일치하면 session에 로그인 유저정보가 담긴 Bean을 저장</li>
+                                <li>아이디저장 체크박스를 선택한 경우 아이디가 cookie에 저장하여 다음 접속시 cookie값을 자동 셋팅</li>
+                            </ul>
+                            <hr style="border-bottom: 1px solid gray; margin: 2%;">
+                            <ul style="list-style-type: square; margin: 0px;">
+                                <li>유저가 입력한 이름과 AES256 암호화 한 연락처를 DB와 일치하는 지 비교</li>
+                                <li>일치하는 경우 하단에 유저의 ID를 노출하고, 불일치 하는 경우 경고 텍스트가 노출</li>
+                            </ul>
+                            <hr style="border-bottom: 1px solid gray; margin: 2%;">
+                            <ul style="list-style-type: square; margin: 0px;">
+                                <li>아이디와 AES256 암호화 한 이메일 주소를 DB와 일치하는 지 비교하여 일치하는 경우 java Random함수로 생성된 인증코드를 Gmail API를 이용하여 유저의 이메일로 전송함</li>
+                                <li>java에서 생성된 인증코드와 유저가 입력한 인증코드가 일치 하는 경우 새 비밀번호 입력화면으로 전환</li>
+                                <li>jQuery로 입력한 비밀번호와 비밀번호 확인 정보가 일치하는지 유효성검사를 거친 후 비밀번호가 변경, 마지막 비밀번호 변경 일시도 update됨</li>
+                            </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td class="trBold"> - 참조 DB</td>
+                      </tr>
+                      <tr>
+                          <td colspan="2">
+                            <ul style="list-style-type: square; margin: 0px;">
+                                <li>로그인<br/>SELECT ... FROM MEMBER WHERE USERID=? AND PW=?</li>
+                                <li>아이디찾기<br/>SELECT ... FROM MEMBER WHERE NAME=? AND PHONE=?</li>
+                                <li>비밀번호찾기<br/>SELECT ... FROM MEMBER WHERE USERID=? AND EMAIL=?</li>
+                            </ul>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+            </div>
+
+
+
+
+
+        </div><!-- work container -->
+
+    <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-dark-gray w3-left-align">Project2: "Petopia" 반려동물 종합케어 사이트</button>
+        <div id="Demo2" class="w3-hide w3-container">
+            <p>Some other text..</p>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 경기 부천시 거주 <br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 010-9982-1387<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: ssum0222@gmail.com<br>
+        <i class="fa fa-laptop fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Github: https://github.com/ssum2<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className =
+    x.previousElementSibling.className.replace("w3-black", "w3-red");
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className =
+    x.previousElementSibling.className.replace("w3-red", "w3-black");
+  }
+}
+</script>
+</body>
+</html>
